@@ -60,7 +60,7 @@ interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   name: "Dylan Satow",
-  title: "I like Math, Machine Learning, and Jazz",
+  title: "Rising Senior at Columbia studying Math and CS",
   contact: {
     email: "dms2315@columbia.edu",
     phone: "914-374-9995",
@@ -75,7 +75,7 @@ export const siteConfig: SiteConfig = {
     { label: "Music", href: "#music", iconName: "Music2" }, // Changed to iconName
   ],
   about:
-    "I'm Dylan, a rising senior at Columbia University. I'm super into broadening my horizons in both math and computer science, with my current obsessions being Mechanistic Interpretability and Representation Learning. I also love more general CS/Software Engineering, and have recently gotten much more into high performance computing (HPC) and web development. I am also an avid jazz trumpet player/multi-instrumentalist, with experience playing at many notable venues in NYC",
+    "I'm Dylan, a rising senior at Columbia University. I'm super into broadening my horizons in both math and computer science, with my current interests being Mechanistic Interpretability and Representation Learning. I also love more general CS/Software Engineering, and have recently gotten much more into high performance computing (HPC) and web development. I am also an avid jazz trumpet player/multi-instrumentalist, with experience playing at many notable venues in NYC",
   experiences: [
     {
       date: "Summer 2025",
