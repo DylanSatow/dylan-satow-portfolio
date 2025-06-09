@@ -51,7 +51,6 @@ interface SiteConfig {
   contact: ContactInfo
   navItems: NavItem[]
   about: string
-  skills: Skill[]
   experiences: Experience[]
   projects: Project[]
   courses: Course[]
@@ -183,7 +182,7 @@ export const siteConfig: SiteConfig = {
   music: {
     title: "Music",
     description:
-      "Long time jazz trumpet player. I dabble in EWI (Electric Wind Instrument), ocarina, guitar, bass, piano, and synths. I'll add some demos here if I'm not lazy...",
+      "Long time jazz trumpet player, and (occasional) player for Noshows (go stream it on all platforms). I dabble in EWI (Electric Wind Instrument), ocarina, guitar, bass, piano, and synths. I'll add some demos here if I'm not lazy...",
     imageUrl: "/images/music-performance.jpeg",
   },
 }
