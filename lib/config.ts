@@ -183,6 +183,6 @@ export const siteConfig: SiteConfig = {
     title: "Music",
     description:
       "Long time jazz trumpet player, and (occasional) player for Noshows (go stream it on all platforms). I dabble in EWI (Electric Wind Instrument), ocarina, guitar, bass, piano, and synths. I'll add some demos here if I'm not lazy...",
-    imageUrl: "/images/music-performance.jpeg",
+    imageUrl: "/images/dylan-trumpet-brooklyn-bridge.jpeg",
   },
 }

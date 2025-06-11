@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Github, Mail, Linkedin, ExternalLink } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image" // Import Next/Image
 import type { ContactInfo } from "@/lib/config"
 
 interface HeroSectionProps {
@@ -9,22 +10,40 @@ interface HeroSectionProps {
   contact: ContactInfo
 }
 
+// Define an array for image placeholders for easier management
+const heroImages = [
+  {
+    src: "/images/hero/mountain-top-hike.jpeg",
+    alt: "Dylan Satow and friend on a mountain top with scenic views",
+  },
+  {
+    src: "/images/hero/trumpet-performance-warm.jpeg",
+    alt: "Dylan Satow playing trumpet on stage with warm lighting",
+  },
+  {
+    src: "/images/hero/trumpet-performance-purple.jpeg",
+    alt: "Dylan Satow playing trumpet on stage with purple lighting",
+  },
+  {
+    src: "/images/hero/under-tarp-harmonica.jpeg",
+    alt: "Dylan Satow playing harmonica under a red tarp outdoors",
+  },
+]
+
 export default function HeroSection({ name, title, contact }: HeroSectionProps) {
   return (
-    <section id="hero" className="py-16 md:py-24 text-center">
+    <section id="hero" className="py-20 md:py-28 text-center">
       {" "}
-      {/* Reduced padding */}
-      <div className="max-w-3xl mx-auto">
+      {/* Adjusted padding slightly */}
+      <div className="max-w-5xl mx-auto">
+        {" "}
+        {/* Increased max-width for image space */}
         <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-          {" "}
-          {/* Slightly smaller h1 on md */}
           <span className="block">{name.split(" ")[0]}</span>
           <span className="block text-teal-400">{name.split(" ").slice(1).join(" ")}</span>
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-slate-300">{title}</p> {/* Reduced mt-6 to mt-4 */}
+        <p className="mt-4 text-lg md:text-xl text-slate-300">{title}</p>
         <div className="mt-8 flex justify-center items-center">
-          {" "}
-          {/* Reduced mt-10 to mt-8 */}
           <Button
             asChild
             variant="outline"
@@ -42,9 +61,25 @@ export default function HeroSection({ name, title, contact }: HeroSectionProps) 
             </Link>
           </Button>
         </div>
+        {/* New Image Gallery Section */}
+        <div className="mt-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 px-2">
+          {heroImages.map((image, index) => (
+            <div
+              key={index}
+              className="relative aspect-square rounded-lg overflow-hidden shadow-lg group transform hover:scale-105 transition-transform duration-300"
+            >
+              <Image
+                src={image.src || "/placeholder.svg"}
+                alt={image.alt}
+                layout="fill"
+                objectFit="cover"
+                className="group-hover:opacity-90 transition-opacity"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300" />
+            </div>
+          ))}
+        </div>
         <div className="mt-10 flex justify-center items-center space-x-6">
-          {" "}
-          {/* Reduced mt-12 to mt-10 */}
           <Link
             href={contact.github}
             target="_blank"
@@ -62,7 +97,7 @@ export default function HeroSection({ name, title, contact }: HeroSectionProps) 
             <Mail className="h-7 w-7" />
           </Link>
           <Link
-            href={contact.linkedin || "#"} // Use contact.linkedin if available
+            href={contact.linkedin || "#"}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"

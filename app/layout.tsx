@@ -12,26 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Dylan Satow Portfolio",
   description: "The personal portfolio of Dylan Satow, a Computer Scientist, Mathematician, and Musician.",
-  generator: 'v0.dev',
-  openGraph: {
-    title: "Dylan Satow Portfolio",
-    description: "The personal portfolio of Dylan Satow, a Computer Scientist, Mathematician, and Musician.",
-    type: "website",
-    images: [
-      {
-        url: "/images/portfolio-preview.png", // You'll need to create this image
-        width: 1200,
-        height: 630,
-        alt: "Dylan Satow Portfolio Preview"
-      }
-    ]
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Dylan Satow Portfolio",
-    description: "The personal portfolio of Dylan Satow, a Computer Scientist, Mathematician, and Musician.",
-    images: ["/images/portfolio-preview.png"], // Same image as OpenGraph
-  }
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
