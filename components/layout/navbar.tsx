@@ -4,7 +4,7 @@ import type React from "react"
 
 import Link from "next/link"
 import { useState } from "react"
-import { Menu, X, UserCircle, Briefcase, Code, BookOpen, Music2 } from "lucide-react" // Import all necessary icons
+import { Menu, X, UserCircle, Briefcase, Code, BookOpen, Music2, Camera } from "lucide-react" // Import all necessary icons
 import { Button } from "@/components/ui/button"
 import type { NavItem } from "@/lib/config"
 
@@ -20,6 +20,7 @@ const iconComponents: { [key: string]: React.ElementType } = {
   Code,
   BookOpen,
   Music2,
+  Camera,
 }
 
 export default function Navbar({ name, navItems }: NavbarProps) {
