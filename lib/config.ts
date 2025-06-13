@@ -1,3 +1,5 @@
+import { Description } from "@radix-ui/react-toast"
+
 export interface NavItem {
   label: string
   href: string
@@ -149,27 +151,26 @@ export const siteConfig: SiteConfig = {
       imageUrl: "/images/manify-paper.png",
     },
     {
+      title: "Synthetic Time-Series Generation for Imbalanced Data",
+      description: "Implemented conditional TimeGAN to address severe class imbalance (10.94:1 ratio) in occupancy detection using PIR sensor data. The solution generates high-fidelity synthetic time-series data that preserves temporal dependencies while oversampling minority classes, improving classification performance on real-world imbalanced datasets.",
+      tags: ["DL/GenAI", "Time-Series Analysis", "Class Imbalance", "MLOps", "Research Implementation", "Model Evaluation"],
+      link: "https://github.com/DylanSatow/SyntheticTimeSeriesGen",
+      imageUrl: "/images/timegan.png",
+    },
+    {
       title: "Multi-Answer Speculative Decoding using Ngrams (Streaminator)",
       description:
-        "Inference pipeline that uses per-prompt n-gram speculators and continuous batching to optimize multi-answer generation with adaptive token prediction.",
+        "Final Project for COMS E6998 High Performance Machine Learning. Inference pipeline that uses per-prompt n-gram speculators and continuous batching to optimize multi-answer generation with adaptive token prediction.",
       tags: ["CUDA", "Python", "Pytorch", "HPC", "NLP"],
       link: "https://github.com/paulkroe/Streaminator",
       imageUrl: "/images/streaminator-flowchart.png",
     },
     {
-      title: "Unsupervised Learning Webapp",
-      description:
-        "Interactive web application for exploring unsupervised learning algorithms and visualizing clustering results with real-time parameter adjustment and data visualization.",
-      tags: ["React", "Python", "Scikit-learn", "D3.js", "Flask"],
-      link: "https://github.com/DylanSatow/unsupervised-learning-webapp",
-      imageUrl: "/images/dimensionality-reduction.jpg",
-    },
-    {
-      title: "Authoritude",
-      description: "Search Engine ranked by authority, not relevance. WIP",
-      tags: ["LangGraph", "FastAPI", "Graph Algorithms"],
-      link: "https://github.com/DylanSatow/authoritude",
-      imageUrl: "/images/authoritude-search.png",
+      title: "LexiLocal: AI-Powered Legal Document Summarization and Q&A",
+      description: "LexiLocal is an AI-powered legal document analysis application that provides intelligent summarization and Q&A capabilities using local LLMs for maximum privacy.The system processes legal documents through a RAG(Retrieval- Augmented Generation) architecture with semantic search and optimized quantized models for efficient inference.",
+      tags: ["Python", "LangChain", "Streamlit", "FAISS", "Sentence Transformers", "Ollama"],
+      link: "https://github.com/DylanSatow/LexiLocal",
+      imageUrl: "/images/ollama.png"
     },
   ],
   courses: [
