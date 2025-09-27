@@ -165,11 +165,11 @@ export const siteConfig: SiteConfig = {
       imageUrl: "/images/streaminator-flowchart.png",
     },
     {
-      title: "LexiLocal: AI-Powered Legal Document Summarization and Q&A",
-      description: "LexiLocal is an AI-powered legal document analysis application that provides intelligent summarization and Q&A capabilities using local LLMs for maximum privacy.The system processes legal documents through a RAG(Retrieval- Augmented Generation) architecture with semantic search and optimized quantized models for efficient inference.",
-      tags: ["Python", "LangChain", "Streamlit", "FAISS", "Sentence Transformers", "Ollama"],
-      link: "https://github.com/DylanSatow/LexiLocal",
-      imageUrl: "/images/ollama.png"
+      title: "Obsidian Git Activity Log for Daily Notes"
+      description: "Golang CLI using Cobra to get all git projects and log activity in corresponding daily notes"
+      tags: ["Golang", "Cobra", "CLI"]
+      link: "https://github.com/DylanSatow/obsid"
+      imageUrl: "/images/obsid.png"
     },
   ],
   courses: [
