@@ -61,7 +61,7 @@ interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   name: "Dylan Satow",
-  title: "Rising Senior at Columbia studying Math and CS",
+  title: "Current Senior at Columbia studying Math and CS",
   contact: {
     email: "dms2315@columbia.edu",
     phone: "914-374-9995",
@@ -76,7 +76,7 @@ export const siteConfig: SiteConfig = {
     { label: "Music", href: "/#music", iconName: "Music2" }, // Changed to absolute path
   ],
   about:
-    "I'm Dylan, a rising senior at Columbia University. I'm super into broadening my horizons in both math and computer science, with my current interests being Mechanistic Interpretability and Representation Learning. I also love more general CS/Software Engineering, and have recently gotten much more into high performance computing (HPC) and web development. I am also an avid jazz trumpet player/multi-instrumentalist, with experience playing at many notable venues in NYC",
+    "I'm Dylan, a senior at Columbia University. I'm super into broadening my horizons in both math and computer science, with my current interests being Mechanistic Interpretability and Representation Learning. I also love more general CS/Software Engineering (shoutout NixOS), and have recently gotten much more into high performance computing. I am also an avid jazz trumpet player/multi-instrumentalist, with experience playing at many notable venues in NYC",
   experiences: [
     {
       date: "Summer 2025",
@@ -114,7 +114,7 @@ export const siteConfig: SiteConfig = {
       date: "January 2024 - December 2024",
       company: "Columbia University",
       location: "New York, New York",
-      role: "Nakul Verma's Research Assistant",
+      role: "Verma Lab Research Assistant",
       description: ["Unsupervised Learning Theory & Creating Tools for Neuroscientists"],
       logoUrl: "/placeholder.svg?width=40&height=40",
     },
@@ -150,11 +150,11 @@ export const siteConfig: SiteConfig = {
       imageUrl: "/images/manify-paper.png",
     },
     {
-      title: "Synthetic Time-Series Generation for Imbalanced Data",
-      description: "Implemented conditional TimeGAN to address severe class imbalance (10.94:1 ratio) in occupancy detection using PIR sensor data. The solution generates high-fidelity synthetic time-series data that preserves temporal dependencies while oversampling minority classes, improving classification performance on real-world imbalanced datasets.",
-      tags: ["DL/GenAI", "Time-Series Analysis", "Class Imbalance", "MLOps", "Research Implementation", "Model Evaluation"],
-      link: "https://github.com/DylanSatow/SyntheticTimeSeriesGen",
-      imageUrl: "/images/timegan.png",
+        title: "Nix Config", 
+        description: "Not really a project but I like my Nix config",
+        tags: ["NixOS"], 
+        link: "https://github.com/DylanSatow/nix-config",
+        imageUrl: "/images/nix.png",
     },
     {
       title: "Multi-Answer Speculative Decoding using Ngrams (Streaminator)",
