@@ -51,7 +51,7 @@ export default function HeroSection({ name, title, contact }: HeroSectionProps) 
             className="border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-slate-900"
           >
             <Link
-              href="https://docs.google.com/document/d/1QprBbcozJn7b6634VFfGvMVNf22PgpWN7473Yqd-iIU/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1GgrJy3RjVAf277lA1XfpBbJVsdEB7tuU/view?usp=sharing"
               target="_blank"
             >
               <span className="flex items-center justify-center">
