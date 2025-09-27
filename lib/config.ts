@@ -165,11 +165,11 @@ export const siteConfig: SiteConfig = {
       imageUrl: "/images/streaminator-flowchart.png",
     },
     {
-      title: "Obsidian Git Activity Log for Daily Notes"
-      description: "Golang CLI using Cobra to get all git projects and log activity in corresponding daily notes"
-      tags: ["Golang", "Cobra", "CLI"]
-      link: "https://github.com/DylanSatow/obsid"
-      imageUrl: "/images/obsid.png"
+      title: "Obsidian Git Activity Log for Daily Notes",
+      description: "Golang CLI using Cobra to get all git projects and log activity in corresponding daily notes",
+      tags: ["Golang", "Cobra", "CLI"],
+      link: "https://github.com/DylanSatow/obsid", 
+      imageUrl: "/images/obsid.png",
     },
   ],
   courses: [
