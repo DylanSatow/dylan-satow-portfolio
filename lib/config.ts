@@ -74,7 +74,6 @@ export const siteConfig: SiteConfig = {
     { label: "Projects", href: "/#projects", iconName: "Code" }, // Changed to absolute path
     { label: "Coursework", href: "/#coursework", iconName: "BookOpen" }, // Changed to absolute path
     { label: "Music", href: "/#music", iconName: "Music2" }, // Changed to absolute path
-    { label: "Gallery", href: "/gallery", iconName: "Camera" }, // Added gallery navigation
   ],
   about:
     "I'm Dylan, a rising senior at Columbia University. I'm super into broadening my horizons in both math and computer science, with my current interests being Mechanistic Interpretability and Representation Learning. I also love more general CS/Software Engineering, and have recently gotten much more into high performance computing (HPC) and web development. I am also an avid jazz trumpet player/multi-instrumentalist, with experience playing at many notable venues in NYC",
