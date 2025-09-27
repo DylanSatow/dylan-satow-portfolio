@@ -13,20 +13,16 @@ interface HeroSectionProps {
 // Define an array for image placeholders for easier management
 const heroImages = [
   {
-    src: "/images/hero/mountain-top-hike.jpeg",
-    alt: "Dylan Satow and friend on a mountain top with scenic views",
+    src: "/images/hero/snowboarding.png",
   },
   {
     src: "/images/hero/trumpet-performance-warm.jpeg",
-    alt: "Dylan Satow playing trumpet on stage with warm lighting",
   },
   {
     src: "/images/hero/trumpet-performance-purple.jpeg",
-    alt: "Dylan Satow playing trumpet on stage with purple lighting",
   },
   {
     src: "/images/hero/under-tarp-harmonica.jpeg",
-    alt: "Dylan Satow playing harmonica under a red tarp outdoors",
   },
 ]
 
