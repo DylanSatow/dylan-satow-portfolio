@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { skills } from '$lib/data';
+	import { skills, gradCourses } from '$lib/data';
 
 	interface Props {
 		selectedIndex: number;
@@ -36,9 +36,21 @@
 			<span class="text-muted-foreground">$</span>
 			<span class="text-foreground ml-2">cat what_im_using_right_now.txt</span>
 		</div>
-		<div class="flex flex-wrap gap-2 mt-2">
+		<div class="flex flex-wrap gap-6 mt-2">
 			{#each skills as skill}
 				<span class="text-primary">{skill}</span>
+			{/each}
+		</div>
+	</div>
+
+	<div class="border-l-2 border-transparent pl-4 mt-6 {selectedIndex === 3 ? 'bg-secondary/50 !border-primary' : ''}">
+		<div>
+			<span class="text-muted-foreground">$</span>
+			<span class="text-foreground ml-2">cat grad_courses.txt</span>
+		</div>
+		<div class="flex flex-wrap gap-6 mt-2">
+			{#each gradCourses as course}
+				<span class="text-primary">{course}</span>
 			{/each}
 		</div>
 	</div>

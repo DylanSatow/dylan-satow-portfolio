@@ -23,3 +23,13 @@ export const blogPosts = [
 ];
 
 export const skills = ['Golang', 'Python', 'Pytorch', 'C/C++', 'Cuda'];
+
+export const gradCourses = [
+	'COMS E6998 High Performance Machine Learning',
+	'COMS E4776 Neural Networks',
+	'COMS W4771 Machine Learning',
+	'COMS W4774 Unsupervised Learning',
+	'COMS W4705 Natural Language Processing',
+	'MATH GU4041 Modern Algebra',
+	'MATH GU4044 Modern Analysis',
+];
