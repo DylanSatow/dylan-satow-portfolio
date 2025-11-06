@@ -9,8 +9,8 @@ export const projects = [
 ];
 
 export const blogPosts = [
-	{ title: 'Building with Svelte 5', date: '2024-01', content: '# Building with Svelte 5\n\nSvelte 5 introduces runes, a new way to handle reactivity...' },
-	{ title: 'Terminal Aesthetics', date: '2023-12', content: '# Terminal Aesthetics\n\nWhy I love the terminal look in web design...' }
+	{ title: 'Building with Svelte 5', date: '2024-01', slug: 'building-with-svelte-5' },
+	{ title: 'Terminal Aesthetics', date: '2023-12', slug: 'terminal-aesthetics' }
 ];
 
 export const skills = ['TypeScript', 'Svelte', 'React', 'Node.js', 'Rust'];
