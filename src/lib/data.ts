@@ -24,7 +24,7 @@ export const blogPosts = [
 	{ title: 'dylansatow.com is finally de-slopified', date: '2025-10', slug: 'deslop' },
 ];
 
-export const skills = ['Golang', 'Python', 'Pytorch', 'C/C++', 'Cuda'];
+export const skills = ['Golang', 'Python', 'Pytorch', 'C/C++', 'Cuda', 'Rust (learning)', ];
 
 export const gradCourses = [
 	'COMS E6998 High Performance Machine Learning',
