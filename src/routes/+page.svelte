@@ -8,28 +8,22 @@
 	const sections = ['about', 'experience', 'projects', 'blog'] as const;
 	let currentSection = $state<typeof sections[number]>('about');
 
-	$effect(() => {
-		function handleKeydown(e: KeyboardEvent) {
-			if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
-				return;
-			}
-
-			const currentIndex = sections.indexOf(currentSection);
-
-			if (e.key === 'h' && currentIndex > 0) {
-				currentSection = sections[currentIndex - 1];
-			} else if (e.key === 'l' && currentIndex < sections.length - 1) {
-				currentSection = sections[currentIndex + 1];
-			}
+	function handleKeydown(e: KeyboardEvent) {
+		if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+			return;
 		}
 
-		window.addEventListener('keydown', handleKeydown);
+		const currentIndex = sections.indexOf(currentSection);
 
-		return () => {
-			window.removeEventListener('keydown', handleKeydown);
-		};
-	});
+		if (e.key === 'h' && currentIndex > 0) {
+			currentSection = sections[currentIndex - 1];
+		} else if (e.key === 'l' && currentIndex < sections.length - 1) {
+			currentSection = sections[currentIndex + 1];
+		}
+	}
 </script>
+
+<svelte:window onkeydown={handleKeydown} />
 
 <!-- Full viewport terminal with minimal padding -->
 <div class="min-h-screen bg-background text-foreground p-2 md:p-4">
@@ -47,7 +41,7 @@
 						onclick={() => currentSection = 'about'} 
 						class="text-primary hover:underline {currentSection === 'about' ? 'underline' : ''}"
 					>
-						about.txt
+						about/
 					</button>
 					<button 
 						onclick={() => currentSection = 'experience'} 
