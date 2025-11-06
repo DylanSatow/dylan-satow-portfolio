@@ -16,6 +16,8 @@ export const research = [
 export const projects = [
 	{ name: 'Manify', description: 'Non-Euclidean Representation Learning Library/Paper. 50+ stars on Github', tech: 'Pytorch, Differential Geometry, Representation Learning', link: 'https://github.com/pchlenski/manify' },
 	{ name: 'Nix Config', description: 'My beautiful Multisystem Nix Config', tech: 'NixOS', link: 'https://github.com/DylanSatow/nix-config' },
+	{ name: 'Cuda Neural Network from Scratch', description: 'Cuda neural network implemented entirely from scratch using no deep learning/matmul libraries', tech: 'CUDA, GPUs', link: 'https://github.com/DylanSatow/CudaNeuralNetwork' },
+	{ name: 'Ixion', description: 'Co-developed withixion.com, an AI-powered lab management software currently being used/adopted by 3 Columbia University labs.', tech: 'CUDA, GPUs', link: 'https://withixion.com/' },
 ];
 
 export const blogPosts = [
