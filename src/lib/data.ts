@@ -1,8 +1,8 @@
 export const jobs = [
 	{ role: 'SDE Intern', company: 'Amazon Web Services | MSK-Connect Team', period: 'Summer 2025',
-		description: 'Implmeneted customer-facing automated limit increase approvals and a daily-executing Lambda to purge non-compliant log groups for every single account in our service.'
+		description: 'Implemented customer-facing automated limit increase approvals and a daily-executing Lambda to purge non-compliant log groups for every single account in our service.'
 	},
-	{ role: 'Data Science Intern', company: 'Pharmavite', period: 'Summer 2022', description: 'Created a full ML pipeline to forecast customer LTVs and CACs. Created Snowflake tasks to automatically push results to a LookerBI dashboard for stakeholders. Too much data engineering.' }
+	{ role: 'Data Science Intern', company: 'Bonafide/Pharmavite', period: 'Summer 2022', description: 'Created a full ML pipeline to forecast customer LTVs and CACs. Created Snowflake tasks to automatically push results to a LookerBI dashboard for stakeholders. Too much data engineering.' }
 ];
 
 export const research = [
