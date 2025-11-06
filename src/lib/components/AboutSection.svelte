@@ -37,7 +37,7 @@
 		</div>
 		<div class="border-l-2 border-transparent pl-4 {selectedIndex === 1 ? 'bg-secondary/50 !border-primary' : ''}">
 			<p class="leading-relaxed text-foreground/80">
-				This site is written using SvelteKit and styled using straight CSS with a Catppuccin theme (All credit for any CSS goes to claude code).
+				This site is written using SvelteKit and styled using straight CSS with a Catppuccin Mocha/Lavendar theme (All credit for any CSS goes to claude code).
 				I have added vim motions to the site (if you don't know what that means, good on you for having a life), so h/l/j/k to your hearts content.
 				Just remember to disable Vimium or your favorite browser vim extension to enjoy.
 			</p>
