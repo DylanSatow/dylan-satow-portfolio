@@ -11,7 +11,7 @@
 <div class="space-y-6">
 	<div>
 		<span class="text-muted-foreground">$</span>
-		<span class="text-foreground ml-2">ls -al</span>
+		<span class="text-foreground ml-2">ls -al blog/</span>
 	</div>
 	{#each blogPosts as post, i}
 		<a
