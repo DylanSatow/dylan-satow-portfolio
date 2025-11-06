@@ -14,7 +14,7 @@
 	function getMaxItems(): number {
 		switch (currentSection) {
 			case 'about':
-				return 4; // about_me, about_website, skills, grad_courses
+				return 5; // about_me, about_website, skills, grad_courses, links
 			case 'experience':
 				return jobs.length + research.length;
 			case 'projects':

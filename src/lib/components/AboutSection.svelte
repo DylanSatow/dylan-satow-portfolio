@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { skills, gradCourses } from '$lib/data';
+	import { skills, gradCourses, links } from '$lib/data';
 
 	interface Props {
 		selectedIndex: number;
@@ -67,6 +67,20 @@
 			<div class="flex flex-wrap gap-6">
 				{#each gradCourses as course}
 					<span class="text-primary">{course}</span>
+				{/each}
+			</div>
+		</div>
+	</div>
+
+	<div class="space-y-2 mt-6">
+		<div>
+			<span class="text-muted-foreground">$</span>
+			<span class="text-foreground ml-2">cat about/links.txt</span>
+		</div>
+		<div class="border-l-2 border-transparent pl-4 {selectedIndex === 4 ? 'bg-secondary/50 !border-primary' : ''}">
+			<div class="flex flex-wrap gap-6">
+				{#each links as link}
+					<a href={link.url} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">{link.name}</a>
 				{/each}
 			</div>
 		</div>

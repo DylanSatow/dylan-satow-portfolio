@@ -35,3 +35,9 @@ export const gradCourses = [
 	'MATH GU4041 Modern Algebra',
 	'MATH GU4044 Modern Analysis',
 ];
+
+export const links = [
+	{ name: 'GitHub', url: 'https://github.com/DylanSatow' },
+	{ name: 'LinkedIn', url: 'https://linkedin.com/in/dylansatow' },
+	{ name: 'X (Twitter)', url: 'https://x.com/dylansatow' },
+];
