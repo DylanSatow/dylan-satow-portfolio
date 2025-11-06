@@ -21,7 +21,7 @@ export const projects = [
 ];
 
 export const blogPosts = [
-	{ title: 'dylansatow.com is finally de-slopified', date: '2025-10', slug: 'deslop' },
+	{ title: 'My New Website', date: '2025-10', slug: 'deslop' },
 ];
 
 export const skills = ['Golang', 'Python', 'Pytorch', 'C/C++', 'Cuda', 'Rust (learning)', ];

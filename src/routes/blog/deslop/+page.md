@@ -6,7 +6,7 @@ slug: deslop
 
 # My New Website
 
-This is a historic day. Dylansatow.com has been freed from bloated Virtual DOMs and endless boilerplate code
+Dylansatow.com has been freed from bloated Virtual DOMs and endless boilerplate code
 and has embraced the simplicity and speed of svelte.
 
 I chose to avoid any component libraries, opting instead to write an initial svelte base manually and style it using claude code, which was
