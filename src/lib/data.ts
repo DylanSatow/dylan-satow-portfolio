@@ -19,8 +19,7 @@ export const projects = [
 ];
 
 export const blogPosts = [
-	{ title: 'Building with Svelte 5', date: '2024-01', slug: 'building-with-svelte-5' },
-	{ title: 'Terminal Aesthetics', date: '2023-12', slug: 'terminal-aesthetics' }
+	{ title: 'dylansatow.com is finally de-slopified', date: '2025-10', slug: 'deslop' },
 ];
 
 export const skills = ['Golang', 'Python', 'Pytorch', 'C/C++', 'Cuda'];
