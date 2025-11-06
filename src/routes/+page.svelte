@@ -68,27 +68,27 @@
 				<span class="text-muted-foreground">$</span>
 				<span class="text-foreground ml-2">ls</span>
 				<div class="mt-2 flex gap-2 sm:gap-3 md:gap-4 flex-wrap">
-					<button 
-						onclick={() => currentSection = 'about'} 
-						class="text-primary hover:underline {currentSection === 'about' ? 'underline' : ''}"
+					<button
+						onclick={() => currentSection = 'about'}
+						class="text-primary hover:underline {currentSection === 'about' ? 'underline' : ''} py-2 px-1 min-h-[44px] flex items-center"
 					>
 						about/
 					</button>
-					<button 
-						onclick={() => currentSection = 'experience'} 
-						class="text-primary hover:underline {currentSection === 'experience' ? 'underline' : ''}"
+					<button
+						onclick={() => currentSection = 'experience'}
+						class="text-primary hover:underline {currentSection === 'experience' ? 'underline' : ''} py-2 px-1 min-h-[44px] flex items-center"
 					>
 						experience/
 					</button>
-					<button 
-						onclick={() => currentSection = 'projects'} 
-						class="text-primary hover:underline {currentSection === 'projects' ? 'underline' : ''}"
+					<button
+						onclick={() => currentSection = 'projects'}
+						class="text-primary hover:underline {currentSection === 'projects' ? 'underline' : ''} py-2 px-1 min-h-[44px] flex items-center"
 					>
 						projects/
 					</button>
-					<button 
-						onclick={() => currentSection = 'blog'} 
-						class="text-primary hover:underline {currentSection === 'blog' ? 'underline' : ''}"
+					<button
+						onclick={() => currentSection = 'blog'}
+						class="text-primary hover:underline {currentSection === 'blog' ? 'underline' : ''} py-2 px-1 min-h-[44px] flex items-center"
 					>
 						blog/
 					</button>
