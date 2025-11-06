@@ -57,17 +57,17 @@
 <svelte:window onkeydown={handleKeydown} />
 
 <!-- Full viewport terminal with minimal padding -->
-<div class="min-h-screen bg-background text-foreground p-2 md:p-4">
-	<div class="h-[calc(100vh-1rem)] md:h-[calc(100vh-2rem)] border-2 border-border bg-card flex flex-col">
+<div class="min-h-screen bg-background text-foreground p-1 sm:p-2 md:p-4">
+	<div class="min-h-[calc(100vh-0.5rem)] sm:min-h-[calc(100vh-1rem)] md:h-[calc(100vh-2rem)] border sm:border-2 border-border bg-card flex flex-col">
 		<TerminalHeader />
 
 		<!-- Terminal content area with overflow -->
-		<div class="flex-1 overflow-y-auto p-4 md:p-6">
+		<div class="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6">
 			<!-- Simple navigation -->
-			<div class="mb-6">
+			<div class="mb-4 sm:mb-6">
 				<span class="text-muted-foreground">$</span>
 				<span class="text-foreground ml-2">ls</span>
-				<div class="mt-2 flex gap-4 flex-wrap">
+				<div class="mt-2 flex gap-2 sm:gap-3 md:gap-4 flex-wrap">
 					<button 
 						onclick={() => currentSection = 'about'} 
 						class="text-primary hover:underline {currentSection === 'about' ? 'underline' : ''}"
