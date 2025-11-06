@@ -5,12 +5,10 @@
 <div class="space-y-4">
 	<div>
 		<span class="text-muted-foreground">$</span>
-		<span class="text-foreground ml-2">cat about.txt</span>
+		<span class="text-foreground ml-2">cat aboutMe.txt</span>
 	</div>
 	<p class="leading-relaxed text-foreground">
-		Hey! I'm a developer who loves building things with code.
-		I'm passionate about clean code, terminal aesthetics, and creating
-		delightful user experiences.
+		I'm Dylan, a senior at Columbia University. I'm super into broadening my horizons in both math and computer science, with my current interests being Mechanistic Interpretability and Representation Learning. I also love more general CS/Software Engineering (shoutout NixOS), and have recently gotten much more into high performance computing. I am also an avid jazz trumpet player/multi-instrumentalist, with experience playing at many notable venues in NYC
 	</p>
 	<div class="mt-6">
 		<span class="text-muted-foreground">$</span>

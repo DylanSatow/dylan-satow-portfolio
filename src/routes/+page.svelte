@@ -5,7 +5,30 @@
 	import ProjectsSection from '$lib/components/ProjectsSection.svelte';
 	import BlogSection from '$lib/components/BlogSection.svelte';
 
-	let currentSection = $state('about');
+	const sections = ['about', 'experience', 'projects', 'blog'] as const;
+	let currentSection = $state<typeof sections[number]>('about');
+
+	$effect(() => {
+		function handleKeydown(e: KeyboardEvent) {
+			if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+				return;
+			}
+
+			const currentIndex = sections.indexOf(currentSection);
+
+			if (e.key === 'h' && currentIndex > 0) {
+				currentSection = sections[currentIndex - 1];
+			} else if (e.key === 'l' && currentIndex < sections.length - 1) {
+				currentSection = sections[currentIndex + 1];
+			}
+		}
+
+		window.addEventListener('keydown', handleKeydown);
+
+		return () => {
+			window.removeEventListener('keydown', handleKeydown);
+		};
+	});
 </script>
 
 <!-- Full viewport terminal with minimal padding -->
