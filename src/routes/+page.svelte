@@ -10,6 +10,11 @@
 	let currentSection = $state<typeof sections[number]>('about');
 	let selectedIndex = $state(0);
 
+	// Setter for selectedIndex (for tap handlers in components)
+	function setSelectedIndex(index: number) {
+		selectedIndex = index;
+	}
+
 	// Get max items for current section
 	function getMaxItems(): number {
 		switch (currentSection) {
@@ -97,13 +102,13 @@
 			
 			<!-- Simplified content sections -->
 			{#if currentSection === 'about'}
-				<AboutSection {selectedIndex} />
+				<AboutSection {selectedIndex} onSelect={setSelectedIndex} />
 			{:else if currentSection === 'experience'}
-				<ExperienceSection {selectedIndex} />
+				<ExperienceSection {selectedIndex} onSelect={setSelectedIndex} />
 			{:else if currentSection === 'projects'}
-				<ProjectsSection {selectedIndex} />
+				<ProjectsSection {selectedIndex} onSelect={setSelectedIndex} />
 			{:else if currentSection === 'blog'}
-				<BlogSection {selectedIndex} />
+				<BlogSection {selectedIndex} onSelect={setSelectedIndex} />
 			{/if}
 		</div>
 	</div>
