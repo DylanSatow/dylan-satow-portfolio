@@ -48,7 +48,7 @@
 			class="border-l-2 border-transparent pl-4 cursor-pointer {selectedIndex === 1 ? 'bg-secondary/50 !border-primary' : ''}"
 		>
 			<p class="leading-relaxed text-foreground">
-				This site is written using SvelteKit and styled using tailwind-CSS with a Catppuccin Mocha/Lavendar theme (All credit for any CSS goes to claude code).
+				This site is written using SvelteKit and styled using tailwind-CSS with a Catppuccin Mocha/Lavendar theme (All credit for any CSS/mobile view goes to claude code).
 				I chose svelte to avoid the bloat of a VDOM while keeping easy, boilerplate-free reactivity.
 				<br>
 				<br>
