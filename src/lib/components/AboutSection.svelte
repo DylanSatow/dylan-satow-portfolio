@@ -16,8 +16,17 @@
 		</div>
 		<div class="border-l-2 border-transparent pl-4 {selectedIndex === 0 ? 'bg-secondary/50 !border-primary' : ''}">
 			<p class="leading-relaxed text-foreground/80">
-				I'm Dylan, a senior at Columbia University. I'm super into broadening my horizons in both math and computer science, with my current interests being Mechanistic Interpretability and Representation Learning. I also love more general CS/Software Engineering (shoutout NixOS), and have recently gotten much more into high performance computing. I am also an avid jazz trumpet player/multi-instrumentalist, with experience playing at many notable venues in NYC
+				I'm Dylan Satow, a 4th year at Columbia University studying Math & CS. I am quite passionate about ML research
+				(my recent interests have been non-euclidean representation learning and mechanistic interpretability), although
+				I am also very into traditional software. I have recently began the process of joining the NixOS cult, and have increasingly been spending
+				my time working on low-level projects/courses.
+				<br>
+				<br>
+				I am also an avid jazz trumpet player/multi-instrumentalist, with my primary instruments being trumpet, guitar, EWI, bass, ocarina, and keys
+				with my proficiency in each falling roughly in that order. I play in the band Noshows with my brother, and have had the privilege of playing
+				in a bunch of cool venues in NYC. Lastly, when time permits it, I am a big nature/camping lover.
 			</p>
+
 		</div>
 	</div>
 
