@@ -4,9 +4,25 @@
 	import ExperienceSection from '$lib/components/ExperienceSection.svelte';
 	import ProjectsSection from '$lib/components/ProjectsSection.svelte';
 	import BlogSection from '$lib/components/BlogSection.svelte';
+	import { jobs, research, projects, blogPosts } from '$lib/data';
 
 	const sections = ['about', 'experience', 'projects', 'blog'] as const;
 	let currentSection = $state<typeof sections[number]>('about');
+	let selectedIndex = $state(0);
+
+	// Get max items for current section
+	function getMaxItems(): number {
+		switch (currentSection) {
+			case 'experience':
+				return jobs.length + research.length;
+			case 'projects':
+				return projects.length;
+			case 'blog':
+				return blogPosts.length;
+			default:
+				return 0;
+		}
+	}
 
 	function handleKeydown(e: KeyboardEvent) {
 		if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
@@ -14,11 +30,18 @@
 		}
 
 		const currentIndex = sections.indexOf(currentSection);
+		const maxItems = getMaxItems();
 
 		if (e.key === 'h' && currentIndex > 0) {
 			currentSection = sections[currentIndex - 1];
+			selectedIndex = 0;
 		} else if (e.key === 'l' && currentIndex < sections.length - 1) {
 			currentSection = sections[currentIndex + 1];
+			selectedIndex = 0;
+		} else if (e.key === 'j' && maxItems > 0 && selectedIndex < maxItems - 1) {
+			selectedIndex++;
+		} else if (e.key === 'k' && maxItems > 0 && selectedIndex > 0) {
+			selectedIndex--;
 		}
 	}
 </script>
@@ -68,11 +91,11 @@
 			{#if currentSection === 'about'}
 				<AboutSection />
 			{:else if currentSection === 'experience'}
-				<ExperienceSection />
+				<ExperienceSection {selectedIndex} />
 			{:else if currentSection === 'projects'}
-				<ProjectsSection />
+				<ProjectsSection {selectedIndex} />
 			{:else if currentSection === 'blog'}
-				<BlogSection />
+				<BlogSection {selectedIndex} />
 			{/if}
 		</div>
 	</div>
