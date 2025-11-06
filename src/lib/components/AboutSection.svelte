@@ -12,7 +12,7 @@
 	<div class="space-y-2">
 		<div>
 			<span class="text-muted-foreground">$</span>
-			<span class="text-foreground ml-2">cat about_me.txt</span>
+			<span class="text-foreground ml-2">cat about/about_me.txt</span>
 		</div>
 		<div class="border-l-2 border-transparent pl-4 {selectedIndex === 0 ? 'bg-secondary/50 !border-primary' : ''}">
 			<p class="leading-relaxed text-foreground/80">
@@ -33,7 +33,7 @@
 	<div class="space-y-2">
 		<div>
 			<span class="text-muted-foreground">$</span>
-			<span class="text-foreground ml-2">cat about_this_website.txt</span>
+			<span class="text-foreground ml-2">cat about/about_this_website.txt</span>
 		</div>
 		<div class="border-l-2 border-transparent pl-4 {selectedIndex === 1 ? 'bg-secondary/50 !border-primary' : ''}">
 			<p class="leading-relaxed text-foreground/80">
@@ -47,7 +47,7 @@
 	<div class="space-y-2 mt-6">
 		<div>
 			<span class="text-muted-foreground">$</span>
-			<span class="text-foreground ml-2">cat what_im_using_right_now.txt</span>
+			<span class="text-foreground ml-2">cat about/what_im_using_right_now.txt</span>
 		</div>
 		<div class="border-l-2 border-transparent pl-4 {selectedIndex === 2 ? 'bg-secondary/50 !border-primary' : ''}">
 			<div class="flex flex-wrap gap-6">
@@ -61,7 +61,7 @@
 	<div class="space-y-2 mt-6">
 		<div>
 			<span class="text-muted-foreground">$</span>
-			<span class="text-foreground ml-2">cat grad_courses.txt</span>
+			<span class="text-foreground ml-2">cat about/grad_courses.txt</span>
 		</div>
 		<div class="border-l-2 border-transparent pl-4 {selectedIndex === 3 ? 'bg-secondary/50 !border-primary' : ''}">
 			<div class="flex flex-wrap gap-6">
