@@ -2,7 +2,19 @@
 	import TerminalHeader from '$lib/components/TerminalHeader.svelte';
 
 	let { children } = $props();
+
+	function handleKeydown(e: KeyboardEvent) {
+		if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+			return;
+		}
+
+		if (e.key === 'h') {
+			window.location.href = '/';
+		}
+	}
 </script>
+
+<svelte:window onkeydown={handleKeydown} />
 
 <div class="min-h-screen bg-background text-foreground p-2 md:p-4">
 	<div class="min-h-[calc(100vh-1rem)] md:min-h-[calc(100vh-2rem)] border-2 border-border bg-card flex flex-col">
