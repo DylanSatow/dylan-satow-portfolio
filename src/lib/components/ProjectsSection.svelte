@@ -11,7 +11,7 @@
 <div class="space-y-6">
 	<div>
 		<span class="text-muted-foreground">$</span>
-		<span class="text-foreground ml-2">ls projects/</span>
+		<span class="text-foreground ml-2">ls -al projects/</span>
 	</div>
 	{#each projects as project, i}
 		<div class="border-l-2 border-primary pl-4 {selectedIndex === i ? 'bg-secondary/50' : ''}">
