@@ -15,7 +15,7 @@
 			<span class="text-foreground ml-2">cat about/about_me.txt</span>
 		</div>
 		<div class="border-l-2 border-transparent pl-4 {selectedIndex === 0 ? 'bg-secondary/50 !border-primary' : ''}">
-			<p class="leading-relaxed text-foreground/80">
+			<p class="leading-relaxed text-foreground">
 				I'm Dylan Satow, a 4th year at Columbia University studying Math & CS. I am quite passionate about ML research
 				(my recent interests have been non-euclidean representation learning and mechanistic interpretability), although
 				I am also very into traditional software. I have recently began the process of joining the NixOS cult, and have increasingly been spending
@@ -36,7 +36,7 @@
 			<span class="text-foreground ml-2">cat about/about_this_website.txt</span>
 		</div>
 		<div class="border-l-2 border-transparent pl-4 {selectedIndex === 1 ? 'bg-secondary/50 !border-primary' : ''}">
-			<p class="leading-relaxed text-foreground/80">
+			<p class="leading-relaxed text-foreground">
 				This site is written using SvelteKit and styled using tailwind-CSS with a Catppuccin Mocha/Lavendar theme (All credit for any CSS goes to claude code).
 				I chose svelte to avoid the bloat of a VDOM while keeping easy, boilerplate-free reactivity.
 				<br>

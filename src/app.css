@@ -38,7 +38,7 @@
   --secondary: var(--ctp-surface0);
   --secondary-foreground: var(--ctp-text);
   --muted: var(--ctp-surface1);
-  --muted-foreground: var(--ctp-overlay2);
+  --muted-foreground: var(--ctp-subtext0);
   --accent: var(--ctp-lavender);
   --accent-foreground: var(--ctp-base);
   --border: var(--ctp-surface0);
