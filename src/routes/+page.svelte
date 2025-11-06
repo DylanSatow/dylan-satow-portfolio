@@ -13,6 +13,8 @@
 	// Get max items for current section
 	function getMaxItems(): number {
 		switch (currentSection) {
+			case 'about':
+				return 3; // about_me, about_website, skills
 			case 'experience':
 				return jobs.length + research.length;
 			case 'projects':
@@ -89,7 +91,7 @@
 			
 			<!-- Simplified content sections -->
 			{#if currentSection === 'about'}
-				<AboutSection />
+				<AboutSection {selectedIndex} />
 			{:else if currentSection === 'experience'}
 				<ExperienceSection {selectedIndex} />
 			{:else if currentSection === 'projects'}

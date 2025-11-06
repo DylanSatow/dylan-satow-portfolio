@@ -76,13 +76,13 @@
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground font-mono;
+  html {
+    font-size: 18px;
+    scroll-behavior: smooth;
   }
 
-  /* Smooth scrolling */
-  html {
-    scroll-behavior: smooth;
+  body {
+    @apply bg-background text-foreground font-mono;
   }
 
   /* Custom scrollbar for terminal aesthetic */
