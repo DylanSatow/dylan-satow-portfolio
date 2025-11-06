@@ -16,6 +16,8 @@
 	</div>
 	{#each projects as project, i}
 		<div
+			role="button"
+			tabindex="-1"
 			onclick={() => onSelect(i)}
 			class="border-l-2 border-primary pl-4 cursor-pointer {selectedIndex === i ? 'bg-secondary/50' : ''}"
 		>

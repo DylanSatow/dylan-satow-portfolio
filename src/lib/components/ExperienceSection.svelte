@@ -17,6 +17,8 @@
 		</div>
 		{#each jobs as job, i}
 			<div
+				role="button"
+				tabindex="-1"
 				onclick={() => onSelect(i)}
 				class="border-l-2 border-primary pl-4 cursor-pointer {selectedIndex === i ? 'bg-secondary/50' : ''}"
 			>
@@ -34,6 +36,8 @@
 		</div>
 		{#each research as item, i}
 			<div
+				role="button"
+				tabindex="-1"
 				onclick={() => onSelect(i + jobs.length)}
 				class="border-l-2 border-primary pl-4 cursor-pointer {selectedIndex === i + jobs.length ? 'bg-secondary/50' : ''}"
 			>

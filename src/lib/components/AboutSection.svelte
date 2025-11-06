@@ -16,6 +16,8 @@
 			<span class="text-foreground ml-2">cat about/about_me.txt</span>
 		</div>
 		<div
+			role="button"
+			tabindex="-1"
 			onclick={() => onSelect(0)}
 			class="border-l-2 border-transparent pl-4 cursor-pointer {selectedIndex === 0 ? 'bg-secondary/50 !border-primary' : ''}"
 		>
@@ -40,6 +42,8 @@
 			<span class="text-foreground ml-2">cat about/about_this_website.txt</span>
 		</div>
 		<div
+			role="button"
+			tabindex="-1"
 			onclick={() => onSelect(1)}
 			class="border-l-2 border-transparent pl-4 cursor-pointer {selectedIndex === 1 ? 'bg-secondary/50 !border-primary' : ''}"
 		>
@@ -60,6 +64,8 @@
 			<span class="text-foreground ml-2">cat about/what_im_using_right_now.txt</span>
 		</div>
 		<div
+			role="button"
+			tabindex="-1"
 			onclick={() => onSelect(2)}
 			class="border-l-2 border-transparent pl-4 cursor-pointer {selectedIndex === 2 ? 'bg-secondary/50 !border-primary' : ''}"
 		>
@@ -77,6 +83,8 @@
 			<span class="text-foreground ml-2">cat about/grad_courses.txt</span>
 		</div>
 		<div
+			role="button"
+			tabindex="-1"
 			onclick={() => onSelect(3)}
 			class="border-l-2 border-transparent pl-4 cursor-pointer {selectedIndex === 3 ? 'bg-secondary/50 !border-primary' : ''}"
 		>
@@ -94,6 +102,8 @@
 			<span class="text-foreground ml-2">cat about/links.txt</span>
 		</div>
 		<div
+			role="button"
+			tabindex="-1"
 			onclick={() => onSelect(4)}
 			class="border-l-2 border-transparent pl-4 cursor-pointer {selectedIndex === 4 ? 'bg-secondary/50 !border-primary' : ''}"
 		>
