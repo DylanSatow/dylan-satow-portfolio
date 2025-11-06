@@ -44,6 +44,12 @@
 			selectedIndex++;
 		} else if (e.key === 'k' && maxItems > 0 && selectedIndex > 0) {
 			selectedIndex--;
+		} else if (e.key === 'Enter') {
+			if (currentSection === 'projects' && selectedIndex < projects.length) {
+				window.open(projects[selectedIndex].link, '_blank');
+			} else if (currentSection === 'blog' && selectedIndex < blogPosts.length) {
+				window.location.href = `/blog/${blogPosts[selectedIndex].slug}`;
+			}
 		}
 	}
 </script>
