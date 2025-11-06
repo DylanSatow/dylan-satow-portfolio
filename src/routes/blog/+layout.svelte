@@ -13,7 +13,7 @@
 				<a href="/" class="text-muted-foreground hover:text-primary">← back to portfolio</a>
 			</div>
 
-			<article class="prose prose-invert max-w-none prose-headings:text-primary prose-a:text-primary prose-strong:text-primary">
+			<article class="max-w-3xl">
 				{@render children()}
 			</article>
 		</div>

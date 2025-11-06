@@ -101,4 +101,57 @@
   ::-webkit-scrollbar-thumb:hover {
     background: var(--ctp-surface2);
   }
+
+  /* Markdown content styling */
+  article h1 {
+    @apply text-2xl font-bold text-primary mb-4 mt-8;
+  }
+
+  article h2 {
+    @apply text-xl font-semibold text-primary mb-3 mt-6;
+  }
+
+  article h3 {
+    @apply text-lg font-semibold text-primary mb-2 mt-4;
+  }
+
+  article p {
+    @apply mb-4 leading-relaxed text-foreground;
+  }
+
+  article a {
+    @apply text-primary hover:underline;
+  }
+
+  article strong {
+    @apply font-semibold text-primary;
+  }
+
+  article ul, article ol {
+    @apply mb-4 ml-6 space-y-2;
+  }
+
+  article li {
+    @apply text-foreground;
+  }
+
+  article ul li {
+    @apply list-disc;
+  }
+
+  article ol li {
+    @apply list-decimal;
+  }
+
+  article code {
+    @apply bg-secondary px-1.5 py-0.5 text-sm text-primary;
+  }
+
+  article pre {
+    @apply bg-secondary p-4 overflow-x-auto mb-4;
+  }
+
+  article pre code {
+    @apply bg-transparent p-0;
+  }
 }
