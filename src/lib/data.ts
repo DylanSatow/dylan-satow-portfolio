@@ -38,6 +38,6 @@ export const gradCourses = [
 
 export const links = [
 	{ name: 'GitHub', url: 'https://github.com/DylanSatow' },
-	{ name: 'LinkedIn', url: 'https://linkedin.com/in/dylansatow' },
+	{ name: 'LinkedIn', url: 'https://linkedin.com/in/dylan-satow' },
 	{ name: 'X (Twitter)', url: 'https://x.com/dylansatow' },
 ];
