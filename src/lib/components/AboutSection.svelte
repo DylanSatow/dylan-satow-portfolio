@@ -24,7 +24,7 @@
 			<p class="leading-relaxed text-foreground">
 				I'm Dylan Satow, a 4th year at Columbia University studying Math & CS. I am quite passionate about ML research
 				(my recent interests have been non-euclidean representation learning and mechanistic interpretability), although
-				I am also very into traditional software. I have recently began the process of joining the NixOS cult, and have increasingly been spending
+				I am also very into traditional software. I have recently embraced Nix/NixOS for both my mac and PC setups, and have increasingly been spending
 				my time working on low-level projects/courses.
 				<br>
 				<br>
