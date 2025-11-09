@@ -29,7 +29,7 @@
 				<br>
 				<br>
 				I am also an avid jazz trumpet player/multi-instrumentalist. My primary instruments are trumpet, guitar, EWI, bass, ocarina, and keys
-				with my proficiency in each falling roughly in that order. I play trumpet in the band Noshows with my brother, and have had the privilege of playing
+				with my proficiency in each falling roughly in that order. I play trumpet in the band <a href="https://noshowsband.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Noshows</a> with my brother, and have had the privilege of playing
 				in a bunch of notable venues in NYC. Lastly, when time permits it, I am a big nature/camping lover.
 			</p>
 
