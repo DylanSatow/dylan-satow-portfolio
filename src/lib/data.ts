@@ -26,19 +26,26 @@ export interface BlogPost {
 export const profile = {
 	name: 'Dylan Satow',
 	handle: 'dylansatow',
-	role: 'Math & CS @ Columbia',
+	role: 'Software Engineer @ AWS',
 	host: 'dylan@satow',
 	email: 'dylansatow531@gmail.com'
 };
 
 export const about = {
-	bio: `I'm Dylan Satow, a 4th-year at Columbia University studying Math & CS. I'm passionate about ML research — lately non-Euclidean representation learning and mechanistic interpretability — though I love traditional systems software just as much. I've recently gone all-in on Nix/NixOS across my Mac and PC, and I keep drifting toward lower-level projects and courses.`,
+	bio: `I'm Dylan Satow, a software engineer at AWS working on Amazon MSK — managed streaming for Apache Kafka — where I spend my time deep in distributed systems. I graduated from Columbia with a degree in Math & CS. I came up through ML research (non-Euclidean representation learning and mechanistic interpretability) and still care about it, but these days I'm a software/systems engineer first, with that ML background layered on top. I've gone all-in on Nix/NixOS across my Mac and PC, and I keep gravitating toward lower-level projects.`,
 	siteNote: `This site is built with SvelteKit and Tailwind CSS in a Catppuccin Mocha theme, designed to feel like a focused window in a tiling window manager. I chose Svelte to skip the VDOM overhead while keeping boilerplate-free reactivity, and every page is prerendered to static HTML for instant loads.`,
 	vimNote: `It's keyboard-driven if you want it to be: h/l switch sections, j/k move, Enter opens, ? shows help. Don't know vim? Just scroll, tap, and click — everything works the normal way too.`
 };
 
 // --- experience -----------------------------------------------------------
 export const jobs: Entry[] = [
+	{
+		role: 'Software Engineer',
+		company: 'Amazon Web Services · MSK (Apache Kafka)',
+		period: '2026 – Present',
+		description:
+			"Engineering on Amazon MSK, AWS's fully-managed Apache Kafka service — distributed streaming infrastructure run at scale."
+	},
 	{
 		role: 'SDE Intern',
 		company: 'Amazon Web Services · MSK-Connect',

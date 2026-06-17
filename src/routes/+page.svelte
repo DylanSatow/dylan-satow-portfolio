@@ -8,9 +8,10 @@
 		'@type': 'Person',
 		name: 'Dylan Satow',
 		url: 'https://dylansatow.com',
-		jobTitle: 'Software Engineer / ML Researcher',
+		jobTitle: 'Software Engineer',
+		worksFor: { '@type': 'Organization', name: 'Amazon Web Services' },
 		alumniOf: { '@type': 'CollegeOrUniversity', name: 'Columbia University' },
-		knowsAbout: ['Machine Learning', 'Representation Learning', 'Systems Programming', 'CUDA'],
+		knowsAbout: ['Distributed Systems', 'Apache Kafka', 'Software Engineering', 'Machine Learning'],
 		sameAs: [
 			'https://github.com/DylanSatow',
 			'https://linkedin.com/in/dylan-satow',
@@ -20,8 +21,8 @@
 </script>
 
 <Seo
-	title="Dylan Satow — Math & CS @ Columbia"
-	description="Dylan Satow — Math & CS at Columbia. ML research (non-Euclidean representation learning, mechanistic interpretability), systems software, and jazz trumpet."
+	title="Dylan Satow — Software Engineer @ AWS"
+	description="Dylan Satow — software engineer at AWS working on Amazon MSK (Apache Kafka) and distributed systems, with a background in ML research. Columbia Math & CS grad."
 />
 
 <svelte:head>

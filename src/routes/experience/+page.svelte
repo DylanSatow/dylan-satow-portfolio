@@ -7,7 +7,7 @@
 
 <Seo
 	title="Experience — Dylan Satow"
-	description="Dylan Satow's experience: SDE intern at AWS, data science at Pharmavite, and ML research across four Columbia labs."
+	description="Dylan Satow's experience: software engineer at AWS on Amazon MSK (Apache Kafka), prior internships, and ML research across four Columbia labs."
 />
 
 <div class="space-y-10">
