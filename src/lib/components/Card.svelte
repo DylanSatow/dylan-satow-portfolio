@@ -16,7 +16,7 @@
 	const base =
 		'group block border-l-2 border-accent pl-4 py-1 transition-colors duration-150';
 	const interactive =
-		'hover:bg-surface focus-visible:bg-surface motion-safe:hover:translate-x-0.5 transition';
+		'hover:bg-surface focus-visible:bg-surface active:bg-surface-2 motion-safe:hover:translate-x-0.5 transition';
 </script>
 
 {#if href}

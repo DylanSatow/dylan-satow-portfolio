@@ -17,7 +17,7 @@
 					href={item.path}
 					data-nav-index={i}
 					aria-current={i === active ? 'page' : undefined}
-					class="flex min-h-[44px] items-center px-1 transition-colors
+					class="flex min-h-[44px] items-center px-1 transition-colors active:text-accent
 						{i === active
 						? 'font-semibold text-accent'
 						: 'text-path hover:text-accent hover:underline'}"

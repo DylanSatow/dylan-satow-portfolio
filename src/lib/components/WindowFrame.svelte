@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { afterNavigate } from '$app/navigation';
 	import TopBar from './TopBar.svelte';
 	import StatusBar from './StatusBar.svelte';
 	import SectionNav from './SectionNav.svelte';
@@ -7,6 +8,13 @@
 
 	let { children } = $props();
 	let pathname = $derived(page.url.pathname);
+
+	// Content scrolls inside <main>, not the window, so SvelteKit's scroll reset
+	// doesn't reach it. Reset it ourselves so every section opens at the top
+	// (otherwise you'd land mid-page after switching while scrolled — esp. mobile).
+	afterNavigate(() => {
+		document.getElementById('content')?.scrollTo({ top: 0 });
+	});
 </script>
 
 <KeyboardShortcuts />

@@ -137,6 +137,8 @@
 		-webkit-text-size-adjust: 100%;
 		text-rendering: optimizeLegibility;
 		-webkit-font-smoothing: antialiased;
+		/* We provide our own :active states; suppress the default gray tap flash. */
+		-webkit-tap-highlight-color: transparent;
 	}
 
 	@media (min-width: 768px) {
