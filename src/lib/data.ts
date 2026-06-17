@@ -120,7 +120,7 @@ export const projects: Project[] = [
 
 // --- music ----------------------------------------------------------------
 export const music = {
-	intro: `I am an avid jazz trumpet player, with decent experience across a wide variety of other instruments. I was previously a student of Don Sickler (Owner of Rudy Van Gelder studio and a former jazz messanger)`,
+	intro: `I am an avid jazz trumpet player, with decent experience across a wide variety of other instruments. I was previously a student of Don Sickler (Owner of Rudy Van Gelder studio and a former jazz messenger)`,
 	band: {
 		name: 'Noshows',
 		url: 'https://noshowsband.com/',
