@@ -14,7 +14,9 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter()
+		// Site is fully prerendered, so no serverless functions actually ship.
+		// Pin the runtime so the adapter validates regardless of local Node version.
+		adapter: adapter({ runtime: 'nodejs22.x' })
 	}
 };
 

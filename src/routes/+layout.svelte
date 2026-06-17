@@ -2,16 +2,16 @@
 	import '../app.css';
 	import { dev } from '$app/environment';
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+	import WindowFrame from '$lib/components/WindowFrame.svelte';
 
 	injectAnalytics({ mode: dev ? 'development' : 'production' });
+
+	// Navigation is instant — like a terminal repaint. Client-side routing keeps
+	// it fast; no view transition (avoids snapshot bleed over the pinned bars).
 
 	let { children } = $props();
 </script>
 
-<svelte:head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-</svelte:head>
-
-{@render children()}
+<WindowFrame>
+	{@render children()}
+</WindowFrame>

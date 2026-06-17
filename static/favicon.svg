@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="terminal prompt">
+  <rect width="100" height="100" fill="#11111b"/>
+  <rect x="2" y="2" width="96" height="96" fill="none" stroke="#b4befe" stroke-width="4"/>
+  <!-- > chevron -->
+  <polyline points="30,34 50,50 30,66" fill="none" stroke="#b4befe" stroke-width="9"
+    stroke-linecap="square" stroke-linejoin="miter"/>
+  <!-- _ cursor -->
+  <rect x="54" y="60" width="22" height="8" fill="#a6e3a1"/>
+</svg>

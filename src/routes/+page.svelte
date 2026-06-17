@@ -1,115 +1,80 @@
 <script lang="ts">
-	import TerminalHeader from '$lib/components/TerminalHeader.svelte';
-	import AboutSection from '$lib/components/AboutSection.svelte';
-	import ExperienceSection from '$lib/components/ExperienceSection.svelte';
-	import ProjectsSection from '$lib/components/ProjectsSection.svelte';
-	import BlogSection from '$lib/components/BlogSection.svelte';
-	import { jobs, research, projects, blogPosts } from '$lib/data';
+	import Prompt from '$lib/components/Prompt.svelte';
+	import Seo from '$lib/components/Seo.svelte';
+	import { about, skills, gradCourses, links } from '$lib/data';
 
-	const sections = ['about', 'experience', 'projects', 'blog'] as const;
-	let currentSection = $state<typeof sections[number]>('about');
-	let selectedIndex = $state(0);
-
-	// Setter for selectedIndex (for tap handlers in components)
-	function setSelectedIndex(index: number) {
-		selectedIndex = index;
-	}
-
-	// Get max items for current section
-	function getMaxItems(): number {
-		switch (currentSection) {
-			case 'about':
-				return 5; // about_me, about_website, skills, grad_courses, links
-			case 'experience':
-				return jobs.length + research.length;
-			case 'projects':
-				return projects.length;
-			case 'blog':
-				return blogPosts.length;
-			default:
-				return 0;
-		}
-	}
-
-	function handleKeydown(e: KeyboardEvent) {
-		if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
-			return;
-		}
-
-		const currentIndex = sections.indexOf(currentSection);
-		const maxItems = getMaxItems();
-
-		if (e.key === 'h' && currentIndex > 0) {
-			currentSection = sections[currentIndex - 1];
-			selectedIndex = 0;
-		} else if (e.key === 'l' && currentIndex < sections.length - 1) {
-			currentSection = sections[currentIndex + 1];
-			selectedIndex = 0;
-		} else if (e.key === 'j' && maxItems > 0 && selectedIndex < maxItems - 1) {
-			selectedIndex++;
-		} else if (e.key === 'k' && maxItems > 0 && selectedIndex > 0) {
-			selectedIndex--;
-		} else if (e.key === 'Enter') {
-			if (currentSection === 'projects' && selectedIndex < projects.length) {
-				window.open(projects[selectedIndex].link, '_blank');
-			} else if (currentSection === 'blog' && selectedIndex < blogPosts.length) {
-				window.location.href = `/blog/${blogPosts[selectedIndex].slug}`;
-			}
-		}
-	}
+	const personLd = {
+		'@context': 'https://schema.org',
+		'@type': 'Person',
+		name: 'Dylan Satow',
+		url: 'https://dylansatow.com',
+		jobTitle: 'Software Engineer / ML Researcher',
+		alumniOf: { '@type': 'CollegeOrUniversity', name: 'Columbia University' },
+		knowsAbout: ['Machine Learning', 'Representation Learning', 'Systems Programming', 'CUDA'],
+		sameAs: [
+			'https://github.com/DylanSatow',
+			'https://linkedin.com/in/dylan-satow',
+			'https://x.com/dylansatow'
+		]
+	};
 </script>
 
-<svelte:window onkeydown={handleKeydown} />
+<Seo
+	title="Dylan Satow — Math & CS @ Columbia"
+	description="Dylan Satow — Math & CS at Columbia. ML research (non-Euclidean representation learning, mechanistic interpretability), systems software, and jazz trumpet."
+/>
 
-<!-- Full viewport terminal with minimal padding -->
-<div class="min-h-screen bg-background text-foreground p-1 sm:p-2 md:p-4">
-	<div class="min-h-[calc(100vh-0.5rem)] sm:min-h-[calc(100vh-1rem)] md:h-[calc(100vh-2rem)] border sm:border-2 border-border bg-card flex flex-col">
-		<TerminalHeader />
+<svelte:head>
+	{@html `<script type="application/ld+json">${JSON.stringify(personLd)}</script>`}
+</svelte:head>
 
-		<!-- Terminal content area with overflow -->
-		<div class="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6">
-			<!-- Simple navigation -->
-			<div class="mb-4 sm:mb-6">
-				<span class="text-muted-foreground">$</span>
-				<span class="text-foreground ml-2">ls</span>
-				<div class="mt-2 flex gap-2 sm:gap-3 md:gap-4 flex-wrap">
-					<button
-						onclick={() => currentSection = 'about'}
-						class="text-primary hover:underline {currentSection === 'about' ? 'underline' : ''} py-2 px-1 min-h-[44px] flex items-center"
-					>
-						about/
-					</button>
-					<button
-						onclick={() => currentSection = 'experience'}
-						class="text-primary hover:underline {currentSection === 'experience' ? 'underline' : ''} py-2 px-1 min-h-[44px] flex items-center"
-					>
-						experience/
-					</button>
-					<button
-						onclick={() => currentSection = 'projects'}
-						class="text-primary hover:underline {currentSection === 'projects' ? 'underline' : ''} py-2 px-1 min-h-[44px] flex items-center"
-					>
-						projects/
-					</button>
-					<button
-						onclick={() => currentSection = 'blog'}
-						class="text-primary hover:underline {currentSection === 'blog' ? 'underline' : ''} py-2 px-1 min-h-[44px] flex items-center"
-					>
-						blog/
-					</button>
-				</div>
-			</div>
-			
-			<!-- Simplified content sections -->
-			{#if currentSection === 'about'}
-				<AboutSection {selectedIndex} onSelect={setSelectedIndex} />
-			{:else if currentSection === 'experience'}
-				<ExperienceSection {selectedIndex} onSelect={setSelectedIndex} />
-			{:else if currentSection === 'projects'}
-				<ProjectsSection {selectedIndex} onSelect={setSelectedIndex} />
-			{:else if currentSection === 'blog'}
-				<BlogSection {selectedIndex} onSelect={setSelectedIndex} />
-			{/if}
+<div class="space-y-8">
+	<section class="space-y-2">
+		<Prompt heading={1} command="cat about/bio.txt" />
+		<p class="border-l-2 border-border pl-4 text-fg">{about.bio}</p>
+	</section>
+
+	<section class="space-y-2">
+		<Prompt command="cat about/this_site.txt" />
+		<div class="space-y-3 border-l-2 border-border pl-4 text-fg">
+			<p>{about.siteNote}</p>
+			<p class="text-fg-muted">{about.vimNote}</p>
 		</div>
-	</div>
+	</section>
+
+	<section class="space-y-2">
+		<Prompt command="cat about/stack.txt" />
+		<ul class="flex flex-wrap gap-x-5 gap-y-1 border-l-2 border-border pl-4">
+			{#each skills as skill}
+				<li class="text-accent">{skill}</li>
+			{/each}
+		</ul>
+	</section>
+
+	<section class="space-y-2">
+		<Prompt command="ls about/grad_coursework/" />
+		<ul class="flex flex-col gap-1 border-l-2 border-border pl-4">
+			{#each gradCourses as course}
+				<li class="text-fg">{course}</li>
+			{/each}
+		</ul>
+	</section>
+
+	<section class="space-y-2">
+		<Prompt command="cat about/links.txt" />
+		<ul class="flex flex-wrap gap-x-5 gap-y-1 border-l-2 border-border pl-4">
+			{#each links as link}
+				<li>
+					<a
+						href={link.url}
+						target={link.url.startsWith('http') ? '_blank' : undefined}
+						rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+						class="text-path underline decoration-from-font underline-offset-2 hover:text-accent"
+					>
+						{link.name}
+					</a>
+				</li>
+			{/each}
+		</ul>
+	</section>
 </div>
