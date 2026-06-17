@@ -10,7 +10,7 @@
 	class="flex shrink-0 items-center gap-3 border-t border-border bg-panel text-xs text-fg-muted"
 >
 	<!-- vim-style mode block -->
-	<span class="bg-accent px-2 py-1.5 font-semibold tracking-wide text-window sm:px-3"> NORMAL </span>
+	<span class="bg-accent px-2 py-1.5 font-semibold tracking-wide text-on-accent sm:px-3"> NORMAL </span>
 
 	<!-- keyboard hints (pointer devices) -->
 	<span class="hidden items-center gap-3 [@media(hover:hover)]:flex">

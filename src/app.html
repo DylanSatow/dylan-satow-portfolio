@@ -4,9 +4,26 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-		<!-- Theme: Catppuccin Mocha base, so mobile browser chrome matches the terminal -->
+		<!-- Theme: matches the resolved theme so mobile browser chrome blends in -->
 		<meta name="theme-color" content="#11111b" />
-		<meta name="color-scheme" content="dark" />
+		<meta name="color-scheme" content="dark light" />
+
+		<!-- Resolve theme before first paint (no flash): stored choice, else system. -->
+		<script>
+			(function () {
+				try {
+					var stored = localStorage.getItem('theme');
+					var light = stored
+						? stored === 'light'
+						: window.matchMedia('(prefers-color-scheme: light)').matches;
+					var el = document.documentElement;
+					el.classList.toggle('light', light);
+					el.classList.toggle('dark', !light);
+					var m = document.querySelector('meta[name="theme-color"]');
+					if (m) m.setAttribute('content', light ? '#dce0e8' : '#11111b');
+				} catch (e) {}
+			})();
+		</script>
 
 		<!-- Icons -->
 		<link rel="icon" href="%sveltekit.assets%/favicon.svg" type="image/svg+xml" />
