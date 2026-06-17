@@ -287,29 +287,3 @@
 	}
 }
 
-/* ============================================================================
-   VIEW TRANSITIONS — a subtle terminal "repaint" between routes
-   ========================================================================== */
-@media (prefers-reduced-motion: no-preference) {
-	/* Chrome (frame, top bar, status bar, section nav) swaps instantly — only the
-	   content region cross-fades, so rapid h/l navigation feels like a clean
-	   terminal repaint instead of the whole window flickering. */
-	.route-content {
-		view-transition-name: route-content;
-	}
-	::view-transition-old(root),
-	::view-transition-new(root) {
-		animation: none;
-	}
-	::view-transition-old(route-content) {
-		animation: vt-fade 80ms ease both reverse;
-	}
-	::view-transition-new(route-content) {
-		animation: vt-fade 110ms ease both;
-	}
-	@keyframes vt-fade {
-		from {
-			opacity: 0;
-		}
-	}
-}
