@@ -42,7 +42,7 @@ export const jobs: Entry[] = [
 	{
 		role: 'Software Engineer',
 		company: 'Amazon Web Services · MSK (Apache Kafka)',
-		period: '2026 – Present',
+		period: 'August 2026 – Present',
 		description:
 			"Engineering on Amazon MSK, AWS's fully-managed Apache Kafka service — distributed streaming infrastructure run at scale."
 	},
