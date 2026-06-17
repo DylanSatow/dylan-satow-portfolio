@@ -1,14 +1,31 @@
 <script lang="ts">
 	import Prompt from '$lib/components/Prompt.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 	import { about, skills, gradCourses, links } from '$lib/data';
+
+	const personLd = {
+		'@context': 'https://schema.org',
+		'@type': 'Person',
+		name: 'Dylan Satow',
+		url: 'https://dylansatow.com',
+		jobTitle: 'Software Engineer / ML Researcher',
+		alumniOf: { '@type': 'CollegeOrUniversity', name: 'Columbia University' },
+		knowsAbout: ['Machine Learning', 'Representation Learning', 'Systems Programming', 'CUDA'],
+		sameAs: [
+			'https://github.com/DylanSatow',
+			'https://linkedin.com/in/dylan-satow',
+			'https://x.com/dylansatow'
+		]
+	};
 </script>
 
+<Seo
+	title="Dylan Satow — Math & CS @ Columbia"
+	description="Dylan Satow — Math & CS at Columbia. ML research (non-Euclidean representation learning, mechanistic interpretability), systems software, and jazz trumpet."
+/>
+
 <svelte:head>
-	<title>Dylan Satow — Math & CS @ Columbia</title>
-	<meta
-		name="description"
-		content="Dylan Satow — Math & CS at Columbia. ML research (non-Euclidean representation learning, mechanistic interpretability), systems software, and jazz trumpet."
-	/>
+	{@html `<script type="application/ld+json">${JSON.stringify(personLd)}</script>`}
 </svelte:head>
 
 <div class="space-y-8">

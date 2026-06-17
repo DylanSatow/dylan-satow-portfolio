@@ -74,7 +74,7 @@
 	/* --- Foreground --- */
 	--fg: var(--ctp-text);
 	--fg-muted: var(--ctp-subtext0);
-	--fg-dim: var(--ctp-overlay1);
+	--fg-dim: var(--ctp-overlay2); /* overlay2 (not overlay1) clears WCAG AA on small text */
 
 	/* --- Terminal syntax roles --- */
 	--accent: var(--ctp-lavender); /* primary accent / links */

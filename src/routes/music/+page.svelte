@@ -1,15 +1,13 @@
 <script lang="ts">
 	import Prompt from '$lib/components/Prompt.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 	import { music } from '$lib/data';
 </script>
 
-<svelte:head>
-	<title>Music — Dylan Satow</title>
-	<meta
-		name="description"
-		content="Dylan Satow plays jazz trumpet and a handful of other instruments, including with the NYC band Noshows."
-	/>
-</svelte:head>
+<Seo
+	title="Music — Dylan Satow"
+	description="Dylan Satow plays jazz trumpet and a handful of other instruments, including with the NYC band Noshows."
+/>
 
 <div class="space-y-8">
 	<section class="space-y-2">

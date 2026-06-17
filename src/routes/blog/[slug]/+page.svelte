@@ -1,17 +1,17 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import Prompt from '$lib/components/Prompt.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 
 	let { data }: { data: PageData } = $props();
 	let Content = $derived(data.content as any);
 </script>
 
-<svelte:head>
-	<title>{data.meta.title} — Dylan Satow</title>
-	{#if data.meta.description}
-		<meta name="description" content={data.meta.description} />
-	{/if}
-</svelte:head>
+<Seo
+	title="{data.meta.title} — Dylan Satow"
+	description={data.meta.description ?? `${data.meta.title} — a post by Dylan Satow.`}
+	type="article"
+/>
 
 <div class="space-y-5">
 	<div class="flex items-center justify-between gap-4">

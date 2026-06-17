@@ -1,16 +1,14 @@
 <script lang="ts">
 	import Prompt from '$lib/components/Prompt.svelte';
 	import Card from '$lib/components/Card.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 	import { jobs, research } from '$lib/data';
 </script>
 
-<svelte:head>
-	<title>Experience — Dylan Satow</title>
-	<meta
-		name="description"
-		content="Dylan Satow's experience: SDE intern at AWS, data science at Pharmavite, and ML research across four Columbia labs."
-	/>
-</svelte:head>
+<Seo
+	title="Experience — Dylan Satow"
+	description="Dylan Satow's experience: SDE intern at AWS, data science at Pharmavite, and ML research across four Columbia labs."
+/>
 
 <div class="space-y-10">
 	<section class="space-y-5">

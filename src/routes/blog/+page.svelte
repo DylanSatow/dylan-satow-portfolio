@@ -1,13 +1,11 @@
 <script lang="ts">
 	import Prompt from '$lib/components/Prompt.svelte';
 	import Card from '$lib/components/Card.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 	import { blogPosts } from '$lib/data';
 </script>
 
-<svelte:head>
-	<title>Blog — Dylan Satow</title>
-	<meta name="description" content="Writing by Dylan Satow on software, ML, and tooling." />
-</svelte:head>
+<Seo title="Blog — Dylan Satow" description="Writing by Dylan Satow on software, ML, and tooling." />
 
 <section class="space-y-5">
 	<Prompt heading={1} command="ls -al blog/" />

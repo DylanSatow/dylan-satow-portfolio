@@ -1,16 +1,14 @@
 <script lang="ts">
 	import Prompt from '$lib/components/Prompt.svelte';
 	import Card from '$lib/components/Card.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 	import { projects } from '$lib/data';
 </script>
 
-<svelte:head>
-	<title>Projects — Dylan Satow</title>
-	<meta
-		name="description"
-		content="Projects by Dylan Satow: Manify (non-Euclidean representation learning), Ixion (AI lab management), a from-scratch CUDA neural network, and a multi-system Nix config."
-	/>
-</svelte:head>
+<Seo
+	title="Projects — Dylan Satow"
+	description="Projects by Dylan Satow: Manify (non-Euclidean representation learning), Ixion (AI lab management), a from-scratch CUDA neural network, and a multi-system Nix config."
+/>
 
 <section class="space-y-5">
 	<Prompt heading={1} command="ls -al projects/" />
