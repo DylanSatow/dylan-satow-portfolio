@@ -2,10 +2,13 @@
 	import '../app.css';
 	import { dev } from '$app/environment';
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+	import WindowFrame from '$lib/components/WindowFrame.svelte';
 
 	injectAnalytics({ mode: dev ? 'development' : 'production' });
 
 	let { children } = $props();
 </script>
 
-{@render children()}
+<WindowFrame>
+	{@render children()}
+</WindowFrame>
