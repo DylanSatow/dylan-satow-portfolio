@@ -3,10 +3,13 @@
 	import TopBar from './TopBar.svelte';
 	import StatusBar from './StatusBar.svelte';
 	import SectionNav from './SectionNav.svelte';
+	import KeyboardShortcuts from './KeyboardShortcuts.svelte';
 
 	let { children } = $props();
 	let pathname = $derived(page.url.pathname);
 </script>
+
+<KeyboardShortcuts />
 
 <a
 	href="#content"
