@@ -31,7 +31,11 @@
 		>
 			<div class="mx-auto max-w-3xl">
 				<SectionNav {pathname} />
-				{@render children()}
+				<!-- Only this region animates between routes; the frame, bars, and
+				     nav above stay put so navigation doesn't flicker the whole window. -->
+				<div class="route-content">
+					{@render children()}
+				</div>
 			</div>
 		</main>
 
