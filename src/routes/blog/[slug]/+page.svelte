@@ -18,7 +18,7 @@
 		<Prompt command="cat blog/{data.slug}.md" />
 		<a
 			href="/blog"
-			class="shrink-0 text-sm text-fg-muted underline-offset-2 hover:text-accent hover:underline"
+			class="flex min-h-[44px] shrink-0 items-center px-1 text-sm text-fg-muted underline-offset-2 hover:text-accent hover:underline active:text-accent"
 		>
 			cd ..
 		</a>

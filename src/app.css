@@ -214,6 +214,26 @@
    TERMINAL PRIMITIVES (used across components)
    ========================================================================== */
 @layer components {
+	/* App shell padding = tiling-WM gap + iOS safe-area insets.
+	   Phones: insets only (0 on non-notched → stays full-bleed). Larger screens:
+	   a gap that grows, always clearing the notch / home indicator. */
+	.app-shell {
+		padding: env(safe-area-inset-top) env(safe-area-inset-right)
+			env(safe-area-inset-bottom) env(safe-area-inset-left);
+	}
+	@media (min-width: 640px) {
+		.app-shell {
+			padding: calc(0.75rem + env(safe-area-inset-top)) calc(0.75rem + env(safe-area-inset-right))
+				calc(0.75rem + env(safe-area-inset-bottom)) calc(0.75rem + env(safe-area-inset-left));
+		}
+	}
+	@media (min-width: 1024px) {
+		.app-shell {
+			padding: calc(1rem + env(safe-area-inset-top)) calc(1rem + env(safe-area-inset-right))
+				calc(1rem + env(safe-area-inset-bottom)) calc(1rem + env(safe-area-inset-left));
+		}
+	}
+
 	/* Blinking block cursor for prompts/headings */
 	.cursor-block::after {
 		content: '';

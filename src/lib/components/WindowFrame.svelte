@@ -26,7 +26,7 @@
 	Skip to content
 </a>
 
-<div class="flex h-[100dvh] flex-col bg-backdrop p-0 sm:p-3 lg:p-4">
+<div class="app-shell flex h-[100dvh] flex-col bg-backdrop">
 	<div
 		class="flex min-h-0 flex-1 flex-col border-2 border-frame/70 bg-window transition-colors duration-300 focus-within:border-frame"
 	>
@@ -37,7 +37,9 @@
 			tabindex="-1"
 			class="flex-1 overflow-y-auto overscroll-contain p-4 outline-none sm:p-6 md:p-8"
 		>
-			<div class="mx-auto max-w-3xl">
+			<!-- Left-anchored like a real shell (not centered) so prompts start at
+			     the window's left edge on wide screens. max-width caps the measure. -->
+			<div class="max-w-3xl">
 				<SectionNav {pathname} />
 				{@render children()}
 			</div>

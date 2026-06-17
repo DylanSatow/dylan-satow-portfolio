@@ -8,7 +8,7 @@
 <nav aria-label="Sections" class="mb-6 sm:mb-8">
 	<div class="text-sm">
 		<span class="text-prompt">$</span>
-		<span class="ml-2 text-command">ls</span>
+		<span class="ml-2 text-command cursor-block">ls</span>
 	</div>
 	<ul class="mt-2 flex flex-wrap gap-x-4 gap-y-1 sm:gap-x-5">
 		{#each sections as item, i}
