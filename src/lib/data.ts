@@ -68,7 +68,7 @@ export const research: Entry[] = [
 		company: "Pe'er Lab @ Columbia",
 		period: 'Jan 2025 – Aug 2025',
 		description:
-			'Coauthor and contributor on a non-Euclidean representation learning library (60+ stars). Implemented every curvature-estimation method with full tests and docs; now working on a follow-up characterizing the distribution of delta-hyperbolicity.'
+			'Core contributor to Manify, a non-Euclidean representation learning library (75+ stars). Implemented every curvature-estimation method with full tests and docs; now working on a follow-up characterizing the distribution of delta-hyperbolicity.'
 	},
 	{
 		role: 'Database / Applied Causal Inference',
@@ -97,7 +97,8 @@ export const research: Entry[] = [
 export const projects: Project[] = [
 	{
 		name: 'Manify',
-		description: 'Non-Euclidean representation learning library and paper. 60+ stars on GitHub.',
+		description:
+			'Core contributor to this non-Euclidean representation learning library and paper. 75+ stars on GitHub.',
 		tech: 'PyTorch · Differential Geometry · Representation Learning',
 		link: 'https://github.com/pchlenski/manify'
 	},
