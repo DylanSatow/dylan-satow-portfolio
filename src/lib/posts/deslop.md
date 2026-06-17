@@ -1,13 +1,13 @@
 ---
 title: My New Website
-date: '2025-10-15'
+date: "2026-06-17"
 description: Rebuilding dylansatow.com on SvelteKit — prerendered, mobile-first, and styled like a focused window in a tiling WM.
 tags: [SvelteKit, Svelte, Web Performance, Catppuccin]
 ---
 
 # My New Website
 
-Dylansatow.com has been freed from bloated virtual DOMs and endless boilerplate, and
+Dylansatow.com has been freed from virtual DOMs and boilerplate, and
 rebuilt around the simplicity and speed of Svelte.
 
 This version is a ground-up redesign. The goals were narrow and stubborn: it should be

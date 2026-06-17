@@ -26,7 +26,7 @@ export const profile = {
 };
 
 export const about = {
-	bio: `I'm Dylan Satow, a software engineer at AWS working on Amazon MSK — managed streaming for Apache Kafka — where I spend my time deep in distributed systems. I graduated from Columbia with a degree in Math & CS. I came up through ML research (non-Euclidean representation learning and mechanistic interpretability) and still care about it, but these days I'm a software/systems engineer first, with that ML background layered on top. I've gone all-in on Nix/NixOS across my Mac and PC, and I keep gravitating toward lower-level projects.`,
+	bio: `I'm Dylan Satow, a software engineer at AWS working on Amazon MSK (Managed Streaming for Apache Kafka) where I spend my time deep in distributed systems. I graduated from Columbia with a degree in Math & CS. I came up through ML research (non-Euclidean representation learning and mechanistic interpretability) and still care about it, but these days I'm a software/systems engineer first, with that ML background layered on top.`,
 	siteNote: `This site is built with SvelteKit and Tailwind CSS in a Catppuccin Mocha theme, designed to feel like a focused window in a tiling window manager. I chose Svelte to skip the VDOM overhead while keeping boilerplate-free reactivity, and every page is prerendered to static HTML for instant loads.`,
 	vimNote: `It's keyboard-driven if you want it to be: h/l switch sections, j/k move, Enter opens, ? shows help. Don't know vim? Just scroll, tap, and click — everything works the normal way too.`
 };
@@ -34,7 +34,7 @@ export const about = {
 // --- experience -----------------------------------------------------------
 export const jobs: Entry[] = [
 	{
-		role: 'Software Engineer',
+		role: 'Software Development Engineer',
 		company: 'Amazon Web Services · MSK (Apache Kafka)',
 		period: 'August 2026 – Present',
 		description:
@@ -99,8 +99,8 @@ export const projects: Project[] = [
 	{
 		name: 'Ixion',
 		description:
-			'Co-developed withixion.com — AI-powered lab-management software in use across 3 Columbia University labs.',
-		tech: 'Django · Python · Next.js · AWS',
+      'Cofounded Ixion Systems, a lab management/procurement platform for universities. We are in the process of onboarding 40+ labs across Columbia, and are currently in talks with other universities for expansion.',
+		tech: 'Rust · NixOS · Fully self-hosted deployments',
 		link: 'https://withixion.com/'
 	},
 	{
@@ -120,18 +120,18 @@ export const projects: Project[] = [
 
 // --- music ----------------------------------------------------------------
 export const music = {
-	intro: `Away from the keyboard I'm a jazz trumpet player and multi-instrumentalist. My main axes, roughly in order of proficiency: trumpet, guitar, EWI, bass, ocarina, and keys.`,
+	intro: `I am an avid jazz trumpet player, with decent experience across a wide variety of other instruments. I was previously a student of Don Sickler (Owner of Rudy Van Gelder studio and a former jazz messanger)`,
 	band: {
 		name: 'Noshows',
 		url: 'https://noshowsband.com/',
-		note: 'I play trumpet in Noshows alongside my brother — we’ve had the privilege of playing a bunch of notable NYC venues.'
+		note: 'I am also the sole horn player for the band Noshows, an NYC based band with 350,000+ monthly listeners and several songs with stream numbers in the millions.'
 	},
-	instruments: ['Trumpet', 'Guitar', 'EWI', 'Bass', 'Ocarina', 'Keys'],
+	instruments: ['Trumpet', 'Guitar', 'Wind Synths', 'Bass', 'Ocarina', 'Keyboard'],
 	outro: `When time allows, you'll find me out in nature — camping is the other thing I never say no to.`
 };
 
 // --- about: tech & coursework ---------------------------------------------
-export const skills = ['Go', 'Java', 'Scala', 'Python', 'PyTorch', 'C / C++', 'CUDA', 'Rust'];
+export const skills = ['Go', 'Java', 'Scala', 'Python', 'C / C++', 'CUDA', 'Rust'];
 
 export const gradCourses = [
 	'COMS E6998 High Performance Machine Learning',
