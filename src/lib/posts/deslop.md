@@ -1,8 +1,8 @@
 ---
 title: My New Website
-date: 2025-10
-slug: deslop
+date: '2025-10-15'
 description: Rebuilding dylansatow.com on SvelteKit — prerendered, mobile-first, and styled like a focused window in a tiling WM.
+tags: [SvelteKit, Svelte, Web Performance, Catppuccin]
 ---
 
 # My New Website

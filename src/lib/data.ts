@@ -16,12 +16,6 @@ export interface Project {
 	link: string;
 }
 
-export interface BlogPost {
-	title: string;
-	date: string;
-	slug: string;
-}
-
 // --- identity -------------------------------------------------------------
 export const profile = {
 	name: 'Dylan Satow',
@@ -123,9 +117,6 @@ export const projects: Project[] = [
 		link: 'https://github.com/DylanSatow/nix-config'
 	}
 ];
-
-// --- blog -----------------------------------------------------------------
-export const blogPosts: BlogPost[] = [{ title: 'My New Website', date: '2025-10', slug: 'deslop' }];
 
 // --- music ----------------------------------------------------------------
 export const music = {

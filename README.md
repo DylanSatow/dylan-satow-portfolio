@@ -42,5 +42,8 @@ Icons and the social card are generated from source SVG:
 
 ```sh
 node scripts/raster-icons.mjs   # favicon.svg -> favicon.png + apple-touch-icon.png
-node scripts/gen-og.mjs         # -> static/og.png (1200x630 social card)
+node scripts/gen-og.mjs         # -> static/og.png (1200x630 site social card)
+node scripts/gen-blog-og.mjs    # -> static/og/<slug>.png (per-post social cards)
 ```
+
+Run `gen-blog-og.mjs` after adding or renaming a blog post so its social card exists.
