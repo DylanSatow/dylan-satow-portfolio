@@ -139,7 +139,7 @@ export const music = {
 };
 
 // --- about: tech & coursework ---------------------------------------------
-export const skills = ['Go', 'Python', 'PyTorch', 'C / C++', 'CUDA', 'Rust (learning)'];
+export const skills = ['Go', 'Java', 'Scala', 'Python', 'PyTorch', 'C / C++', 'CUDA', 'Rust'];
 
 export const gradCourses = [
 	'COMS E6998 High Performance Machine Learning',
