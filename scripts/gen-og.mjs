@@ -46,7 +46,6 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" v
   <!-- body -->
   <text x="74" y="232" font-size="30"><tspan fill="${C.green}">$</tspan><tspan fill="${C.text}"> whoami</tspan></text>
   <text x="74" y="336" font-size="94" font-weight="700" fill="${C.lavender}">Dylan Satow</text>
-  <rect x="690" y="266" width="26" height="74" fill="${C.lavender}"/>
   <text x="78" y="404" font-size="36" fill="${C.sub}">Software Engineer @ AWS</text>
   <text x="78" y="456" font-size="28" fill="${C.overlay}">distributed systems &#183; ML research &#183; jazz trumpet</text>
 
