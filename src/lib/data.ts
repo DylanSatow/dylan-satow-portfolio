@@ -99,7 +99,7 @@ export const projects: Project[] = [
 	{
 		name: 'Ixion',
 		description:
-      'Cofounded Ixion Systems, a lab management/procurement platform for universities. We are in the process of onboarding 40+ labs across Columbia, and are currently in talks with other universities for expansion.',
+      'Cofounded Ixion Systems, a lab management/procurement platform for universities. We are in the process of onboarding 40+ labs across Columbia, Cooper Union and NYU',
 		tech: 'Rust · NixOS · Fully self-hosted deployments',
 		link: 'https://withixion.com/'
 	},
